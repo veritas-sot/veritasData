@@ -1,0 +1,26 @@
+---
+tags:
+  - name: ospf
+    slug: ospf
+    description: "OSPF active"
+    content_types: [ dcim.interface, dcim.device ]
+  - name: hsrp
+    slug: hsrp
+    description: "HSRP configured on Interface"
+    content_types: [ dcim.interface ]
+  - name: dhcp
+    slug: dhcp
+    description: "DHCP configured on Interface"
+    content_types: [ dcim.interface ]
+  - name: portfast
+    slug: portfast
+    description: "Spanningtree portfast configured on Interface"
+    content_types: [ dcim.interface ]
+  - name: stack
+    slug: stack
+    description: "Device is Stackmember"
+    content_types: [ dcim.device ]
+  - name: section:lab
+    slug: sectionlab
+    description: "prefix in lab"
+    content_types: [ ipam.prefix ]

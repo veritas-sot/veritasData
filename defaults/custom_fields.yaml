@@ -1,0 +1,24 @@
+---
+custom_field_choices:
+  - field: {'name': 'my_custom_field'}
+    display: 'test'
+    value: test
+custom_fields:
+  - name: my_custom_field
+    slug: my_custom_field
+    description: my custom field
+    type: select
+    required: false
+    weight: 100
+    # validation_regex: ^[A-Z]{3}$
+    default: test
+    content_types: [ dcim.device ]
+  - name: my_custom_int_field
+    slug: my_custom_int_field
+    description: my custom int field
+    type: integer
+    required: false
+    weight: 101
+    validation_minimum: 100
+    validation_maximum: 200
+    content_types: [ dcim.interface ]

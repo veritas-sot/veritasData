@@ -1,0 +1,14 @@
+---
+device_types:
+  - name: offline
+    model: offline
+    slug: offline
+    manufacturer: cisco
+  - name: iosv
+    model: iosv
+    slug: iosv
+    manufacturer: cisco
+  - name: default-type
+    model: default-type
+    slug: default-type
+    manufacturer: cisco

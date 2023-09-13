@@ -1,0 +1,40 @@
+---
+# active if either True or False
+active: True
+name: match on hostname
+# platform must match the platform in device_defaults (ios, nxos, ...)
+platform: all
+# the following list is processed one by one
+required:
+  # the name is just a info for you and does not matter
+  - name: first example
+    # matches is used to match in certain values 
+    # its syntax is source / key / [lookup]
+    matches:
+      # facts__fqdn__re: k(?P<digits>\d+)rt
+      # facts__hostname__ic: 0815
+      facts__fqdn: k0815rt.xx
+      # config can either be global or interfaces
+      # config__global__ic: username lab
+      # config__interfaces__ic: ip address
+    values:
+      # custom fields can be used as cf_fieldname
+      cf_net: is in lab
+      # other properties are used by its name
+      serial: 123
+  - name: second example
+    matches:
+      # source / key / [lookup]
+      # facts__fqdn__re: k(?P<digits>\d+)rt
+      facts__fqdn: k0815rt.xxx
+    values:
+      # to set site use slug or name; the syntax looks like this
+      site: {'slug': '__named__digits'}
+  - name: third example
+    mapping: example_mapping.csv
+    maps_on:
+      # facts or defaults property / csv file property
+      - fqdn: hostname
+    delimiter: ","
+    quotechar: "|"
+    quoting: minimal

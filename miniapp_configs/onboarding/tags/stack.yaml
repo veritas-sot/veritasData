@@ -1,0 +1,10 @@
+---
+active: False
+name: stack
+platform: ios
+source:
+  fullconfig: true
+tags:
+  - name: test
+    contains: test
+    scope: dcim.device

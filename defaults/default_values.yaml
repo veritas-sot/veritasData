@@ -1,0 +1,38 @@
+---
+defaults:
+  0.0.0.0/0:
+    manufacturer: cisco
+    status: active
+    site: default-site
+    device_role: default-role
+    device_type: default-type
+    platform: ios
+    custom_fields:
+      net: testnet
+      test: value
+    # tags: [ {'name': 'ospf'} ]
+  10.0.0.0/8:
+    ignore: True
+  172.16.0.0/12:
+    offline: True
+    site: default-site
+    device_role: default-role
+    device_type: default-type
+    platform: ios
+  192.168.0.0/24:
+    site: default-site
+    manufacturer: cisco
+    platform: ios
+    device_role: default-role
+    device_type: default-type
+    platform: ios
+  192.168.10.0/24:
+    site: default-site
+    manufacturer: cisco
+    platform: ios
+    device_role: default-role
+    device_type: default-type
+    platform: ios
+    primary_interface: GigabitEthernet0/0
+    offline: True
+  

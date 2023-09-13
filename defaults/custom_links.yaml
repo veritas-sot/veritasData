@@ -1,0 +1,10 @@
+---
+custom_links:
+  - name: custom_link
+    content_type: dcim.device
+    text: my custom link
+    target_url: http://127.0.0.1/
+    weight: 100
+    group_name: mygroup
+    button_class: default
+    new_window: True

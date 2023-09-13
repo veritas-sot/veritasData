@@ -1,0 +1,10 @@
+---
+active: True
+name: Cisco based cdp neighbors
+vendor: cisco
+cables:
+  - command:
+      cmd: show cdp neighbors detail
+      template:
+        ios: cisco_ios_show_cdp_neighbors_detail.textfsm
+        nxos: cisco_nxos_show_cdp_neighbors_detail.textfsm

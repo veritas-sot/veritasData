@@ -1,0 +1,17 @@
+---
+active: True
+name: interfaces
+platform: ios
+source:
+  section: interfaces
+tags:
+  - name: ospf
+    pattern: ip ospf
+    scope: dcim.interface
+  - name: hsrp
+    pattern: ^ standby version
+    scope: dcim.interface
+  - name: dhcp
+    pattern: ^ ip address dhcp
+    scope: dcim.interface
+  

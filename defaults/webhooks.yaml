@@ -1,0 +1,86 @@
+---
+webhooks:
+  - name: update-device-topic
+    content_types:
+      - dcim.device
+    type_create: false
+    type_update: true
+    type_delete: false
+    payload_url: http://127.0.0.1:8000/webhook/update-device/topic
+    http_method: POST
+    http_content_type: "application/json"
+    additional_headers: ""
+    body_template: >
+      {"update": {
+        "event": "{{event}}",
+        "timestamp": "{{timestamp}}",
+        "username": "{{username}}",
+        "id": "{{data['id']}}",
+        "name": "{{data['name']}}"}
+      }
+    secret: ""
+    ssl_verification: false
+    ca_file_path: ""
+  - name: add-device-topic
+    content_types:
+      - dcim.device
+    type_create: true
+    type_update: false
+    type_delete: false
+    payload_url: http://127.0.0.1:8000/webhook/add-device/topic
+    http_method: POST
+    http_content_type: "application/json"
+    additional_headers: ""
+    body_template: >
+      {"update": {
+        "event": "{{event}}",
+        "timestamp": "{{timestamp}}",
+        "username": "{{username}}",
+        "id": "{{data['id']}}",
+        "name": "{{data['name']}}"}
+      }
+    secret: ""
+    ssl_verification: false
+    ca_file_path: ""
+  - name: update-device-queued
+    content_types:
+      - dcim.device
+    type_create: false
+    type_update: true
+    type_delete: false
+    payload_url: http://127.0.0.1:8000/webhook/update-device/queued
+    http_method: POST
+    http_content_type: "application/json"
+    additional_headers: ""
+    body_template: >
+      {"update": {
+        "event": "{{event}}",
+        "timestamp": "{{timestamp}}",
+        "username": "{{username}}",
+        "id": "{{data['id']}}",
+        "name": "{{data['name']}}"}
+      }
+    secret: ""
+    ssl_verification: false
+    ca_file_path: ""
+  - name: add-device-queued
+    content_types:
+      - dcim.device
+    type_create: true
+    type_update: false
+    type_delete: false
+    payload_url: http://127.0.0.1:8000/webhook/add-device/queued
+    http_method: POST
+    http_content_type: "application/json"
+    additional_headers: ""
+    body_template: >
+      {"update": {
+        "event": "{{event}}",
+        "timestamp": "{{timestamp}}",
+        "username": "{{username}}",
+        "id": "{{data['id']}}",
+        "name": "{{data['name']}}"}
+      }
+    secret: ""
+    ssl_verification: false
+    ca_file_path: ""

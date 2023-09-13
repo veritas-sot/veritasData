@@ -1,0 +1,9 @@
+---
+prefixes:
+  - prefix: 10.0.0.0/8
+    status: active
+    description: my 10er
+  - prefix: 192.168.0.0/24
+    status: active
+    description: my192er
+    tags: [{'name': 'section:lab'}]

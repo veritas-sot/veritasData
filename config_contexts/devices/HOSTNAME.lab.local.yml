@@ -1,0 +1,21 @@
+---
+interfaces:
+  hsrp:
+  - auth: xxx
+    ip: 192.168.0.1
+    standby: 100
+    version: 2
+  - auth: xxxx
+    ip: 192.168.2.1
+    priority: 90
+    standby: 101
+    version: 2
+  - auth: xxx
+    ip: 192.168.253.1
+    standby: 500
+    version: 2
+  - auth: xxx
+    ip: 192.168.253.3
+    priority: 90
+    standby: 502
+    version: 2

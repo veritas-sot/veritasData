@@ -1,0 +1,6 @@
+---
+sites:
+  - name: default-site
+    slug: default-site
+    status: active
+    description: Descripdefault-sitetion

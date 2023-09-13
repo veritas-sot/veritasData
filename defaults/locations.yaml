@@ -1,0 +1,8 @@
+---
+locations:
+   - name: City
+     slug: city
+     description: City
+     location_type: {'slug': 'city'}
+     site: {'name': 'default-site'}
+     status: active
