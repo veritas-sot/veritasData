@@ -1,0 +1,7 @@
+---
+locations:
+   - name: site_1
+     slug: site_1
+     description: Site 1
+     location_type: {'name': 'site'}
+     status: {'name': 'Active'}

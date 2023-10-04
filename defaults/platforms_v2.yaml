@@ -1,0 +1,16 @@
+---
+platforms:
+  - name: ios
+    slug: ios
+    description: IOSv
+    manufacturer: {'name': 'cisco'}
+    napalm_driver: ios
+  - name: nxos
+    slug: nxos
+    description: nxos
+    manufacturer: {'name': 'cisco'}
+    napalm_driver: nxos
+  - name: offline
+    slug: offline
+    description: offline
+    manufacturer: {'name': 'cisco'}

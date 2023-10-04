@@ -1,0 +1,17 @@
+---
+location_types:
+   - name: site
+     description: Name of site
+     content_types: [ dcim.device ]
+     nestable: true
+   - name: country
+     slug: country
+     description: Name of Country
+     content_types: [ dcim.device ]
+     nestable: true
+   - name: city
+     slug: city
+     parent: country
+     description: Name of City
+     content_types: [ dcim.device ]
+     nestable: false
