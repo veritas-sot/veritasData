@@ -3,7 +3,7 @@ defaults:
   0.0.0.0/0:
     manufacturer: cisco
     status: active
-    site: default-site
+    location: default-site
     device_role: default-role
     device_type: default-type
     platform: ios
@@ -15,19 +15,19 @@ defaults:
     ignore: True
   172.16.0.0/12:
     offline: True
-    site: default-site
+    location: default-site
     device_role: default-role
     device_type: default-type
     platform: ios
   192.168.0.0/24:
-    site: default-site
+    location: default-site
     manufacturer: cisco
     platform: ios
     device_role: default-role
     device_type: default-type
     platform: ios
   192.168.10.0/24:
-    site: default-site
+    location: default-site
     manufacturer: cisco
     platform: ios
     device_role: default-role
