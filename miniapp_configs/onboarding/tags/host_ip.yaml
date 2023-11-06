@@ -1,16 +1,15 @@
 ---
-active: False
+active: True
 name: host_or_ip
 platform: ios
 source:
   # use device properties to match device
   device:
-    - ip: 1.2.3.4
-    - hostname: hostname
-    - model: model
-    - manufacturer: manufacturer
-    - os_version: version123
+    - ip: 192.168.0.1
+    # - hostname: switch.local
+    # - model: model
+    # - manufacturer: manufacturer
+    # - os_version: version123
 tags:
   - name: test
     scope: dcim.device
-

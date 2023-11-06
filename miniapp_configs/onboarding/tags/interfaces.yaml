@@ -14,4 +14,3 @@ tags:
   - name: dhcp
     pattern: ^ ip address dhcp
     scope: dcim.interface
-  
