@@ -2,9 +2,9 @@
 defaults:
   0.0.0.0/0:
     manufacturer: cisco
-    status: active
+    status: Active
     location: default-site
-    device_role: default-role
+    role: default-role
     device_type: default-type
     platform: ios
     custom_fields:
@@ -16,21 +16,21 @@ defaults:
   172.16.0.0/12:
     offline: True
     location: default-site
-    device_role: default-role
+    role: default-role
     device_type: default-type
     platform: ios
   192.168.0.0/24:
     location: default-site
     manufacturer: cisco
     platform: ios
-    device_role: default-role
+    role: default-role
     device_type: default-type
     platform: ios
   192.168.10.0/24:
     location: default-site
     manufacturer: cisco
     platform: ios
-    device_role: default-role
+    role: default-role
     device_type: default-type
     platform: ios
     primary_interface: GigabitEthernet0/0

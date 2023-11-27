@@ -1,0 +1,6 @@
+---
+mappings:
+  columns:
+    # the format is key in excel/csv => key in our script
+    host: host
+
