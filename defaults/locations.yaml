@@ -1,0 +1,11 @@
+---
+locations:
+  - name: site_1
+    description: Site 1
+    location_type: {'name': 'site'}
+    status: {'name': 'Active'}
+  - name: branch_1
+    description: Branch_1
+    parent: {'name': 'Berlin'}
+    location_type: {'name': 'branch'}
+    status: {'name': 'Active'}

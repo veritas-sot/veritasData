@@ -2,13 +2,10 @@
 device_types:
   - name: offline
     model: offline
-    slug: offline
     manufacturer: {'name': 'cisco'}
   - name: iosv
     model: iosv
-    slug: iosv
     manufacturer: {'name': 'cisco'}
   - name: default-type
     model: default-type
-    slug: default-type
     manufacturer: {'name': 'cisco'}

@@ -1,7 +1,4 @@
 ---
 manufacturers:
   - name: cisco
-    slug: cisco
     description: Cisco Systems US
-
-    

@@ -3,15 +3,18 @@ location_types:
    - name: site
      description: Name of site
      content_types: [ dcim.device ]
-     nestable: true
+     nestable: false
    - name: country
-     slug: country
      description: Name of Country
      content_types: [ dcim.device ]
-     nestable: true
+     nestable: false
    - name: city
-     slug: city
      parent: country
      description: Name of City
+     content_types: [ dcim.device ]
+     nestable: false
+   - name: branch
+     parent: city
+     description: Name of branch office
      content_types: [ dcim.device ]
      nestable: false

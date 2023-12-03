@@ -1,5 +1,0 @@
----
-device_roles:
-  - name: default-role
-    slug: default-role
-    description: default-role
