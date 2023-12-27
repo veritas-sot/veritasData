@@ -8,7 +8,7 @@ platform: all
 required:
   # the name is just a info for you and does not matter
   - name: first example
-    # matches is used to match in certain values 
+    # matches is used to match on certain values 
     # its syntax is source / key / [lookup]
     matches:
       # facts__fqdn__re: k(?P<digits>\d+)rt
@@ -28,13 +28,10 @@ required:
       # facts__fqdn__re: k(?P<digits>\d+)rt
       facts__fqdn: k0815rt.xxx
     values:
-      # to set site use slug or name; the syntax looks like this
-      site: {'slug': '__named__digits'}
+      # to set location name; the syntax looks like this
+      location: {'name': '__named__digits'}
   - name: third example
-    mapping: example_mapping.csv
-    maps_on:
-      # facts or defaults property / csv file property
-      - fqdn: hostname
+    file: example_mapping.csv
     delimiter: ","
     quotechar: "|"
     quoting: minimal

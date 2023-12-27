@@ -1,2 +1,2 @@
-hostname,site__slug,cf_net
+hostname,location__name,cf_net
 lab.local,overwrite_site,set_cf_field
