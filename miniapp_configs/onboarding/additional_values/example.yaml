@@ -1,11 +1,11 @@
 ---
 # active if either True or False
-active: True
+active: False
 name: match on hostname
 # platform must match the platform in device_defaults (ios, nxos, ...)
 platform: all
 # the following list is processed one by one
-required:
+additional:
   # the name is just a info for you and does not matter
   - name: first example
     # matches is used to match on certain values 
@@ -31,7 +31,16 @@ required:
       # to set location name; the syntax looks like this
       location: {'name': '__named__digits'}
   - name: third example
-    file: example_mapping.csv
+    mapping: example_mapping.csv
+    maps_on:
+      # facts or defaults property / csv file property
+      - fqdn: hostname
     delimiter: ","
     quotechar: "|"
     quoting: minimal
+  - name: additional values form xlsx
+    file: example.xlsx
+    format: xlsx
+    matches_on:
+      # the format is sot_key: excel_key
+      - name: hostname
