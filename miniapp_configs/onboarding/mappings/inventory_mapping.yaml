@@ -1,6 +1,10 @@
 ---
 mappings:
   columns:
-    # the format is key in excel/csv => key in our script
-    host: host
-
+    # the format is key in excel/csv => key in nautobot
+    my_hostname: name
+  values:
+    # for each key (eg. name, ip, ...) in your excel/csv you can define new values
+    name:
+      # if name is old_name and should now be new_name use this 
+      old_name: new_name
