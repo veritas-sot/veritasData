@@ -3,14 +3,13 @@ defaults:
   0.0.0.0/0:
     manufacturer: cisco
     status: Active
-    location: {'name': 'default-site'}
+    location.name: default-site
     role: default-role
     device_type: default-type
     platform: ios
     custom_fields:
       net: testnet
       test: value
-    # tags: [ {'name': 'ospf'} ]
   10.0.0.0/8:
     ignore: True
   172.16.0.0/12:
@@ -32,4 +31,3 @@ defaults:
     platform: ios
     primary_interface: GigabitEthernet0/0
     offline: True
-  
