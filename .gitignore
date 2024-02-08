@@ -161,3 +161,4 @@ cython_debug/
 *.xlsx
 miniapp_configs/onboarding/additional_values/example.yaml
 miniapp_configs/onboarding/additional_values/example.yaml
+miniapp_configs/onboarding/additional_values/example.yaml
