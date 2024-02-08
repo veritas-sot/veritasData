@@ -1,0 +1,12 @@
+---
+roles:
+  - name: network
+    description: network
+    content_types: [ dcim.device ]
+  - name: firewall
+    description: firewall
+    content_types: [ dcim.device ]
+  - name: server
+    description: server
+    content_types: [ dcim.device ]
+  

@@ -1,9 +1,5 @@
 ---
 location_types:
-   - name: site
-     description: Name of site
-     content_types: [ dcim.device ]
-     nestable: false
    - name: country
      description: Name of Country
      content_types: [ dcim.device ]

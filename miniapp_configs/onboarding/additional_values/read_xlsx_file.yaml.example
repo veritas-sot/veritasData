@@ -1,0 +1,20 @@
+
+---
+# active is either True or False
+active: True
+name: read XLSX file
+# platform must match the devices's platform (ios, nxos, ...)
+# use ALL to activate the template for ALL platforms
+platform: all
+# the following list is processed one by one
+additional:
+  - name: third values form xlsx
+    # to read a file (Excel or CSV) use the 'file' argument and specify the format of the file
+    file: example.xlsx
+    format: xlsx
+    # you have to configure 'matches_on'. 
+    # This value is used to find out the device for which the properties should be added.
+    matches_on:
+      # the format is sot_key: excel_key
+      # eg. if device.name matches excel.hostname the device is used
+      - name: hostname

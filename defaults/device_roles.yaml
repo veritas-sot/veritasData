@@ -1,5 +1,0 @@
----
-device_roles:
-  - name: default-role
-    description: default-role
-    content_types: [ dcim.device ]

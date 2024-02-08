@@ -4,11 +4,13 @@ defaults:
     manufacturer: cisco
     status: Active
     location.name: default-site
+    location.location_type.name: ast
     role: default-role
     device_type: default-type
     platform: ios
+    tags: test
     custom_fields:
-      net: testnet
+      net: testnet2
       test: value
   10.0.0.0/8:
     ignore: True

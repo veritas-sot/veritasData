@@ -12,6 +12,14 @@ custom_field_choices:
   - custom_field: phpipam
     display: 'showName'
     value: showName
+
+  - custom_field: snmp_credentials
+    display: cred-1
+    value: cred-1
+  - custom_field: snmp_credentials
+    display: cred-2
+    value: cred-2
+
 custom_fields:
   - label: phpipam
     description: PHPIPAM Settings
@@ -20,3 +28,16 @@ custom_fields:
     weight: 100
     content_types: [ ipam.prefix ]
 
+  - label: snmp_credentials
+    description: SNMP Credentials
+    type: select
+    required: false
+    weight: 100
+    content_types: [ dcim.device ]
+
+  - label: net
+    description: Name of net
+    type: text
+    required: false
+    weight: 100
+    content_types: [ dcim.device ]

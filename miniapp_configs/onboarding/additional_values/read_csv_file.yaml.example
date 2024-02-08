@@ -1,0 +1,20 @@
+
+---
+# active is either True or False
+active: False
+name: read CSV file
+# platform must match the devices's platform (ios, nxos, ...)
+# use ALL to activate the template for ALL platforms
+platform: all
+# the following list is processed one by one
+additional:
+  - name: third values form csv
+    mapping: example_mapping.csv
+    matches_on:
+      # you have to configure 'matches_on'. 
+      # This value is used to find out the device for which the properties should be added.
+      # eg device.facts macthes csv.hostname
+      - fqdn: hostname
+    delimiter: ","
+    quotechar: "|"
+    quoting: minimal

@@ -1,0 +1,35 @@
+---
+# active is either True or False
+active: True
+name: match on hostname
+# platform must match the devices's platform (ios, nxos, ...)
+# use ALL to activate the template for ALL platforms
+platform: all
+# the following list is processed one by one
+additional:
+  # the name is just a info for you and does not matter
+  - name: first example
+    # matches is used to match on certain values 
+    # its syntax is source__ key__[lookup]
+    matches:
+      #
+      # these are examples you can use
+      #
+      # facts__fqdn__re: k(?P<digits>\d+)rt
+      # facts__hostname__ic: 0815
+      facts__fqdn: lab.local
+      # config can either be global or interfaces
+      # config__global__ic: username lab
+      # config__interfaces__ic: ip address
+    values:
+      #
+      # the following values are added to the device properties
+      #
+      # custom fields can be used as cf_fieldname
+      cf_net: is in lab
+      # other properties are used by its name
+      serial: 123
+      # you can use a dot to build a dict
+      # eg. to set the location name use location.name
+      location.name: default-site
+

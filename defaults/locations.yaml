@@ -1,11 +1,21 @@
 ---
 locations:
-  - name: site_1
-    description: Site 1
-    location_type: {'name': 'site'}
-    status: {'name': 'Active'}
+  - name: germany
+    description: Germany
+    location_type.name: country
+    status.name: Active
+  - name: berlin
+    parent: germany
+    description: Berlin
+    location_type.name: city
+    status.name: Active
   - name: branch_1
-    description: Branch_1
-    parent: {'name': 'Berlin'}
-    location_type: {'name': 'branch'}
-    status: {'name': 'Active'}
+    parent.name: berlin
+    description: Branch 1
+    location_type.name: branch
+    status.name: Active
+  - name: branch_2
+    parent.name: berlin  
+    description: Branch 2
+    location_type.name: branch
+    status.name: Active

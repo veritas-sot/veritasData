@@ -1,11 +1,15 @@
 ---
 device_types:
-  - name: offline
-    model: offline
-    manufacturer: {'name': 'cisco'}
-  - name: iosv
-    model: iosv
-    manufacturer: {'name': 'cisco'}
   - name: default-type
     model: default-type
-    manufacturer: {'name': 'cisco'}
+    manufacturer.name: cisco
+  - name: offline
+    model: offline
+    manufacturer.name: cisco
+  - name: iosv
+    model: iosv
+    manufacturer.name: cisco
+  - name: firewall
+    model: firewall
+    manufacturer.name: cisco
+  
