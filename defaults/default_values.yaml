@@ -3,8 +3,10 @@ defaults:
   0.0.0.0/0:
     manufacturer: cisco
     status: Active
-    location.name: default-site
-    location.location_type.name: ast
+    location:
+      name: default-site
+      location_type:
+        name: ast
     role: default-role
     device_type: default-type
     platform: ios

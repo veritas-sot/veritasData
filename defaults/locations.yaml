@@ -2,20 +2,38 @@
 locations:
   - name: germany
     description: Germany
-    location_type.name: country
-    status.name: Active
+    location_type:
+      name: country
+    status:
+      name: Active
   - name: berlin
     parent: germany
     description: Berlin
-    location_type.name: city
-    status.name: Active
+    location_type:
+      name: city
+    status:
+      name: Active
   - name: branch_1
-    parent.name: berlin
+    parent:
+      name: berlin
     description: Branch 1
-    location_type.name: branch
-    status.name: Active
+    location_type:
+      name: branch
+    status:
+      name: Active
   - name: branch_2
-    parent.name: berlin  
+    parent:
+      name: berlin  
     description: Branch 2
-    location_type.name: branch
-    status.name: Active
+    location_type:
+      name: branch
+    status:
+      name: Active
+  - name: office
+    parent:
+      name: berlin  
+    description: Office
+    location_type:
+      name: branch
+    status:
+      name: Active
