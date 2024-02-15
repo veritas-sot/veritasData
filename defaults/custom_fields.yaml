@@ -41,3 +41,10 @@ custom_fields:
     required: false
     weight: 100
     content_types: [ dcim.device ]
+
+  - label: scan_prefix
+    description: Scan Prefix
+    type: boolean
+    required: false
+    weight: 100
+    content_types: [ ipam.prefix ]
